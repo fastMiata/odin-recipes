@@ -1,22 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cookbook</title>
-        <link rel="stylesheet" href=".//styles.css">
-    </head>
-    <body>
-        <h1 class = "header">Jordan Siemens' Cookbook</h1>
-        <div class = "content">
-            <img src="assets/ramen-noodles.gif">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <title>Jordan's Cookbook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <h1>JORDAN'S COOKBOOK</h1>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Recipes</a></li>
+            <li><a href="">Me</a></li>
+          </ul>
+        </div>    
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="hero">
+        <div class="text-box">
+            <h1>Welcome to My Cookbook</h1>
+            <p> These are some of my favourite recipes I've made throughout university.<br> Displayed on a 
+              website written in pure Html and Css, while also incorporating concepts 
+              such a responsive design, flex-box, and traditional design methods.</p>
         </div>
-        <h3 class = "subheader">Recent Recipes</h3>
-        <div class = "content">
-            <ul class = "list">
-                <li><a href="recipes/Bibimbap.html">Bibimbap</a></li>
-                <li><a href="recipes/Ramen.html">Spicy Miso Shin Ramen</a></li>
-                <li><a href="recipes/Adobo.html">Pork Adobo</a></li>
-            </ul>
+        <div class="gif-container">
+          <img src="assets/ramen-noodles.gif">
         </div>
-    </body>
+      </div>
+    </section>
+
+    <section class="recipes">
+      <h1>My Favourite Recipes</h1>
+      <p>Here are arguably the best recipes I've managed to make this semester</p>
+      <div class="row">
+        <div class="image-col">
+          <img src="assets/kimchi_fried_rice.jpg">
+          <div class="layer"><h3>Kimchi Fried Rice</h3></div>
+        </div>
+        <div class="image-col">
+          <img src="assets/teriyaki_beef.jpg">
+          <div class="layer"><h3>Teriyaki Beef Stir-fry</h3></div>
+        </div>
+        <div class="image-col">
+          <img src="assets/salmon_sushi.jpg">
+          <div class="layer"><h3>Salmon Sushi Rice Bowl</h3></div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0px";
+    }
+
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+  </body>
+
 </html>
