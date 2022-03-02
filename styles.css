@@ -122,6 +122,7 @@ nav .fa{
 
 .recipes{
   margin: auto;
+  min-height: 60vh;
   text-align: center;
   padding-top: 100px;
   background: #E5E3C9;
@@ -183,4 +184,31 @@ nav .fa{
 .layer:hover h3{
   bottom:49%;
   opacity: 1;
+}
+.me{
+  min-height: 15vh;
+  padding-top: 25px;
+  padding-left:10px;
+  padding-right:10px;
+  background: #94B49F;
+  text-align: center;
+}
+.me-container{
+  width: 85%;
+  display:flex;
+  justify-content: start;
+  margin: auto;
+  padding: 15px;
+  position: relative;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.me p{
+  text-align: left;
+}
+.me-container img{
+  border-radius: 15px;
+  width:100px;
+  height:auto;
+  margin-right:25px;
 }
